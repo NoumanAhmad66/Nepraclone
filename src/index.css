@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  white-space: revert;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a{
+  text-decoration: none !important;
+  font-family: var(--primary-font) !important;
+  color: var(--white-color);
+  cursor: pointer;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  
+}
+.nav-item a:hover {
+  color: var(--third-color) !important;
+  cursor: pointer;
+  font-weight: 500 !important;
+  
+}
+.active{
+  color: var(--third-color) !important;
+  cursor: pointer;
+  font-weight: 500 !important;
+}
+.active:hover{
+  color: var(--white-color) !important;
+  cursor: pointer;
+  font-weight: 500 !important; 
+}
+
+
+
+
+ul,
+ol {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #11244D;
+  --secondry-color: #10254C;
+  --third-color: #0d69da;
+  --white-color: #fff;
+  --offwhite-color: #292222cc;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000000;
+  --primary-font: "rubik", sans-serif;
+  --secondry-font: "Quicksand", sans-serif;
+  --third-font: "roboto", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+
+h1 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.125rem !important;
+  color: var(--white-color) !important;
+  font-family: var(--primary-font) !important;
+  width: 100%;
+  margin-bottom: 1.125rem !important;
+}
+
+h2 {
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+  text-transform: capitalize !important;
+  font-family: var(--primary-font) !important;
+  color: var(--white-color) !important;
+  margin-bottom: 1.125rem !important;
+}
+h3 {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  text-transform: capitalize !important;
+  font-family: var(--primary-font) !important;
+  color: var(--black-color) !important;
+  margin-bottom: 10px !important;
+}
+
+h4 {
+  color:var(--black-color) !important;
+  font-family: var(--primary-font) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.4 !important;
+}
+
+h5 {
+  color: var(--black-color) !important;
+  text-transform: capitalize !important;
+  font-family: var(--primary-font) !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.2 !important;
+}
+
+h6{
+  color: var(--black-color);
+  font-family: var(--primary-font) !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+p {
+  font-family: var(--third-font) !important;
+  font-size: 1rem !important;
+  color: var(--white-color) !important;
+  margin-bottom: 1.875rem !important;
+  text-align: left !important;
+  line-height: 24px;
+}
+
+.card-desc {
+  font-family: var(--secondry-font) !important;
+  font-size: 1rem !important;
+  color: var(--black-color) !important;
+  font-weight: 500 !important;
+  line-height: 1.75rem !important;
+  letter-spacing: 1px !important;
+  text-align: start !important;
+  margin: 10px 0px 24px 0px !important;
+}
+
+.main-btn {
+  padding: 8px 18px !important;
+  background: linear-gradient(
+    to right,
+    #02218f 0%,
+    #0e72e3 50%,
+    #02218f 100%
+  ) !important;
+  background-size: 200% 100% !important; /* Double the size for animation */
+  color: var(--white-color) !important;
+  border: 0px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: var(--primary-font) !important;
+  z-index: 0 !important;
+  transition: all 0.4s ease-in-out !important;
+  border-radius: 4px !important;
+  text-align: center;
+}
+
+.btn-2 {
+  padding: 5px 10px;
+  text-align: center;
+  background: linear-gradient(to right, #6f8dff, #6aa5e7, #6f8dff, #6aa5e7);
+  background-size: 300% 100%;
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .4s ease-in-out;
+  justify-items: center;
+  border-radius: 5px !important;
+}
+
+.main-btn:hover {
+  background-position: 100% 0 !important; /* Move gradient position */
+  color: var(--white-color) !important;
+}
+
+.btn-2:hover {
+  background-position: 100% 0 !important; /* Move gradient position */
+  color: var(--white-color) !important;
+}
+
+/*
+==========================================
+  Scrollbar design
+==========================================
+*/
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to bottom,
+    #e0e0e0,
+    #f9f9f9
+  ); /* Gradient background */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    142deg,
+    #0068ec 21.8%,
+    #00bbf9 73.22%
+  ) !important; /* Gradient thumb */
+
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Inner shadow */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    142deg,
+    #00bbf9 21.8%,
+    #0068ec 73.22%
+  ) !important; /* Darker gradient on hover */
+}
+
+/*
+==========================================
+  Media Queries
+==========================================
+*/
+@media only screen and (min-width: 200px) and (max-width: 424px) {
+
+}
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+ h1{
+  font-size: 1.9rem !important;
+        text-align: center;
+ }
+ h2{
+  font-size: 1rem !important;
+  text-align: center;
+ }
+ h3{
+  font-size: 1rem !important;
+  text-align: center;
+ }
+ p{
+  font-size: 0.75rem !important;
+  text-align: center;
+ } 
+
+}
+@media only screen and (min-width: 575px) and (max-width: 990px) {
+ 
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1244px) {
+
+  h5{
+    font-size: 1rem !important;
+  }
+  .nav-item a {
+    font-size: 12px !important;
+    padding: 24px 12px 24px 12px !important;
+  }
+  .nav-item button{
+    font-size: 10px !important;
+    padding: 8px 8px !important;
+  }
+  .card-size{
+    padding-left: 0px !important;
+  }
+  .card-body .btn-1{
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+  }
+  .dropdown-menu a{
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1170px;
+  }
+}

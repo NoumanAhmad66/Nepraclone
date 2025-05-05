@@ -1,0 +1,158 @@
+.nav-item .nav-link:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  background-color: #0d69da;
+  bottom: 20px;
+  left: 11px; /* Adjust if needed */
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out; /* Transition for smooth width change */
+  color: #160f30 !important;
+}
+
+.nav-item .nav-link:hover:before {
+  width: 60%;
+}
+.nav-link {
+  padding: 24px 12px 24px 12px !important;
+  position: relative;
+}
+.list-arrow:after {
+  content: "+"; /* Icon or character */
+  font-family: var(
+    --primary-font,
+    Arial
+  ); /* Use a default font if no primary font is defined */
+  font-size: 14px;
+  margin-left: 8px;
+  display: inline-block;
+  transition: transform 0.3s linear; /* Smooth rotation */
+}
+.list-arrow:hover:after {
+  transform: rotate(180deg); /* Rotate when hovered */
+}
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown:hover .dropdown-menu-last {
+  display: block; /* Keep dropdown visible */
+}
+
+/* Add smooth transition */
+.dropdown-menu {
+  display: none; /* Default hidden */
+  position: absolute; /* Ensure proper positioning */
+  top: 4.5rem; /* Position below the parent */
+  left: 8px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out; /* Smooth appearance */
+  border: 0px !important ;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-radius: 3px;
+  background-color: #fff !important;
+  white-space: normal !important; /* Prevent text wrapping */
+  overflow-wrap: break-word;
+}
+.menu-width {
+  width: 14rem !important;
+}
+.dropdown-menu-last {
+  display: none; /* Default hidden */
+  position: absolute; /* Ensure proper positioning */
+  top: 4.5rem; /* Position below the parent */
+  right: 28px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out; /* Smooth appearance */
+  border: 0px !important ;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-radius: 3px;
+  background-color: #fff !important;
+  padding-left: 0px !important;
+  width: 12rem;
+}
+
+.dropdown-item {
+  color: #160f30 !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  padding: 5px 15px !important;
+  transition: all 0.3s linear;
+  white-space: normal !important; /* Key: let text wrap */
+  display: block; /* Make sure each item takes full line */
+  border-bottom: 1px solid #000000 !important;
+  
+
+}
+.dropdown-item:hover {
+  color: #0d6bdc !important;
+  padding: 5px 15px !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  border-bottom: 1px solid #0d6bdc !important;
+  transform: translateY(-1px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: transparent !important;
+}
+
+/* Styles when scrolled */
+.navbar.navbar-scrolled {
+  background-color: rgb(17 36 75) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgb(7 63 174 / 43%) !important;
+  animation: 500ms running fadeInDown;
+  transition: all 0.5s;
+  backdrop-filter: blur(5px);
+  padding: 0px !important;
+}
+.service-width {
+  width: 14rem;
+}
+.Subdropdown-menu {
+    display: none; /* Hidden initially */
+    position: absolute;
+    top: 10px;
+    left: 100%; /* Submenu aligns to the right of parent */
+    z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Smooth appearance */
+    border: 0px !important ;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-radius: 3px;
+    background-color: #fff !important;
+    padding-left: 0px !important;
+    width: 12rem;
+  }
+/* Ensure submenu appears properly */
+.dropdown-item:hover + .Subdropdown-menu,
+.Subdropdown-menu:hover {
+  display: block !important;
+}
+.btn-nav {
+  padding: 5px 10px;
+  text-align: center;
+  background: transparent;
+  background-size: 300% 100%;
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .4s ease-in-out;
+  justify-items: center;
+  border-radius: 5px  !important;
+  border: 1px solid #ffffff !important;
+}
+.btn-nav:hover {
+  background-color:#02218f;
+}
+
+/* new design */
+.navbar-ui{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px);
+  padding: 0px !important;
+}
+.navbar-brand{
+  width: 22% !important;
+}
+

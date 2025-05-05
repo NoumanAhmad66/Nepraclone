@@ -1,0 +1,24 @@
+/* Brand Logos Container */
+.main {
+  background-color: #F2F2F2;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  overflow: hidden;
+}
+
+
+.logo {
+  transform: scale(0.9);
+  margin: 0 15px; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Logo */
+.logo:hover {
+  transform: scale(1.1) !important;
+  opacity: 1; 
+}
+
+.slick-list {
+  padding: 0 15px; /* Adjust padding to reduce excess space */
+}

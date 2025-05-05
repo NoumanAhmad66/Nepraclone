@@ -1,0 +1,36 @@
+
+.marquee {
+    background-color: #f2f2f2; 
+    white-space: nowrap; /* Prevent text wrapping */
+    display: flex;
+    align-items: center;
+  }
+  .marquee a{
+    font-weight: 300 !important;
+    font-family: var(--primary-font) !important;
+    font-size: 18px !important;
+    text-decoration: none; 
+    position: absolute;
+	transform:translateX(100%);
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .marquee a:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll-left {
+    0%   { 
+    
+    transform: translateX(100%); 		
+    }
+    100% { 
+   
+    transform: translateX(-100%); 
+    }
+   }
+  
+
+
+
+

@@ -1,0 +1,28 @@
+.main-hero{
+    position: relative;
+    z-index: -1;
+}
+.banner-img{
+    background-image: url(../../assets/hero&footerimg/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+   
+}
+.banner-back:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 58%);
+    z-index: 1;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+  }
