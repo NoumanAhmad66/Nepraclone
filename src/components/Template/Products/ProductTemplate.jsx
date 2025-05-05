@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Template.css"
-import logo3 from "../../../assets/Product/Kaslast.png";
+import logo3 from "../../../assets/Product/kaslast.png";
 import Form from "../../Form/Form.jsx";
 
 function ProductTemplate({ rows,rowmid,rowlast}) {
